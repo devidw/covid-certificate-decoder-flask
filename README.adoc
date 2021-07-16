@@ -2,4 +2,4 @@
 
 Convert the plain text contents of your health certificate qr coode intothe JSON-format
 
-https://🦠💉.tk[🦠💉.tk]
+http://🦠💉.tk[🦠💉.tk]
