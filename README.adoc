@@ -1,5 +1,5 @@
 = EU Digital COVID Certificate Converter
 
-Convert the plain text contents of your health certificate qr coode intothe JSON-format
+Convert the plain text contents of your health certificate qr coode into the JSON-format
 
 http://🦠💉.tk[🦠💉.tk]
