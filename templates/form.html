@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post">
+  <textarea name="qr" rows="6" placeholder="HC1: …" required class="form-control mb-3"></textarea>
+  <input type="submit" value="decode" class="btn btn-primary w-100">
+</form>
+{% endblock %}

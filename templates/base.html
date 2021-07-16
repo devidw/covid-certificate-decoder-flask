@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  {% block head %}
+  <title>{% block title %}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/import.min.css') }}">
+  {% endblock %}
+</head>
+
+<body>
+  {% include "./includes/nav.html" %}
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+
+</html>
