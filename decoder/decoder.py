@@ -13,5 +13,6 @@ def decode(cert):
     cbor_data = cbor2.loads(cbor_data)
     json_data = cbor2.loads(cbor_data.value[2])
     json_data = json.dumps(json_data, indent=2)
-    # object = json.loads(json_data)
-    return json_data
+    object = json.loads(json_data)
+    object = object['-260']['1']
+    return object

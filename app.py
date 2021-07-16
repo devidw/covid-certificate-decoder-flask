@@ -9,7 +9,7 @@ def index():
     if request.method == 'POST':
         qr = request.form['qr']
         json = decode(qr)
-        return render_template('json.html', json=json)
+        return render_template('json.html', cert=json)
     else:
         return render_template('form.html')
 
