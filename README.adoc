@@ -1,6 +1,6 @@
 = EU Digital COVID Certificate Decoder
 
-Convert the plain text contents of your health certificate qr coode into the JSON-format live on http://🦠💉.tk[🦠💉.tk]
+Convert the plain text contents of your health certificate qr code into the JSON-format live on http://🦠💉.tk[🦠💉.tk]
 
 
 == See
