@@ -5,65 +5,7 @@ Your decoded EU Digital COVID Certificate
 {% endblock %}
 
 {% block content %}
-
-<!-- <pre>
-  <code>
-    {{ cert }}
-  </code>
-</pre> -->
-
-
-<table class="table">
-  <thead>
-    <tr>
-      <th>key</th>
-      <th>property</th>
-      <th>value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- level 1 -->
-    {% for key in cert %}
-    <tr>
-      <td><code>{{ key }}</code></td>
-      <td></td>
-      <td>
-        <!-- level 2 -->
-        {% if cert[key] is mapping or cert[key] is not string %}
-        <table class="table">
-          <tbody>
-            {% for key2 in cert[key] %}
-            <tr>
-              <td><code>{{ key2 }}</code></td>
-              <td></td>
-              <td>
-                <!-- level 3 -->
-                {% if cert[key][key2] is iterable and (cert[key][key2] is not string) %}
-                <table class="table">
-                  <tbody>
-                    {% for key3 in cert[key][key2] %}
-                    <tr>
-                      <td><code>{{ key3 }}</code></td>
-                      <td></td>
-                      <td>{{ cert[key][key2][key3] }}</td>
-                    </tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-                {% else %}
-                {{ cert[key][key2] }}
-                {% endif %}
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-        {% else %}
-        {{ cert[key] }}
-        {% endif %}
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<article class="table-wrapper" style="overflow-x:scroll">
+  {{ table|safe }}
+</article>
 {% endblock %}
